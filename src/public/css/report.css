@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+.btn {
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+ul.dropdown-content.select-dropdown li span {
+  background-color: white;
+  color: black;
+}
+
+.datepicker-date-display{
+  background-color: black;
+  color: white;
+}
+
+.datepicker-cancel, .datepicker-clear, .datepicker-table td.is-today, .datepicker-done {
+  color: red;
+}
+
+.datepicker-table td.is-selected {
+  background-color: black;
+  color: white;
+}
+
+ul.dropdown-content.select-dropdown li span {
+  color: red;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.input-field .prefix.active {
+  color:black;
+}
+
+.input-field input:focus + label {
+  color: red !important;
+}
+
+.row .input-field input:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important
+}
+
+textarea:focus + label {
+  color: red !important;
+}
+
+textarea:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important
+}
+
+.progress {
+  background-color: black;
+}
+
+.switch label .lever {
+  background-color: grey;
+}
+
+.switch label .lever:after{
+  background-color: black;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: black;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: grey;
+}
+
+.card-content input:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important
+}
+.collection .collection-item {
+  border-bottom: none !important;
+}
+
+.page-footer .footer-copyright {
+  background-color: black;
+}

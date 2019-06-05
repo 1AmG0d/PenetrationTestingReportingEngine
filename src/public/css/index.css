@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: black;
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.progress {
+  background-color: black;
+}
+
+.page-footer .footer-copyright {
+  background-color: black;
+}

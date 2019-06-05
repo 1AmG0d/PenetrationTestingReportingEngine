@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+.progress {
+  background-color: black;
+}
+
+.input-field .prefix.active {
+  color:black;
+}
+
+.input-field input:focus + label {
+  color: red !important;
+}
+
+.row .input-field input:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important
+}
+
+.btn {
+  background-color: black;
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.page-footer .footer-copyright {
+  background-color: black;
+}
