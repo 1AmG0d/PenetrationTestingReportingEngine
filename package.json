@@ -1,6 +1,6 @@
 {
   "name": "penetrationtestingreportingengine",
-  "productName" : "Penetration Testing Reporting Engine",
+  "productName": "Penetration Testing Reporting Engine",
   "version": "0.8.7",
   "description": "Allows Penetration Testers To Quickly And Consistently Generate Penetration Testing Reports",
   "main": "src/main.js",
@@ -13,7 +13,6 @@
     "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds",
     "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --prune=true --out=release-builds",
     "package-all": "electron-packager . --overwrite --asar=true --platform=all --arch=all --prune=true --out=release-builds"
-
   },
   "repository": {
     "type": "git",
@@ -31,8 +30,8 @@
     "electron-packager": "^13.1.1"
   },
   "_comments": {
-  "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
-  "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
-  "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
   }
 }

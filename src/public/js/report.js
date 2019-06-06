@@ -416,11 +416,11 @@ saveTemplateEvent.addEventListener('click', function(){
 });
 
 loadTemplateEvent.addEventListener('click', function(){
-  fs.open(path.join(configuration.templateDirectory, path.basename(templateFileInput.value)), 'r', function(err, fd){
+  fs.open(path.join(templateFileInput.files[0].path), 'r', function(err, fd){
     if (err) throw err;
   });
 
-  var templateData = JSON.parse(fs.readFileSync(path.join(configuration.templateDirectory, path.basename(templateFileInput.value))));
+  var templateData = JSON.parse(fs.readFileSync(templateFileInput.files[0].path));
 
   applicationName.value = templateData.applicationName;
   applicationURL.value = templateData.applicationURL;
