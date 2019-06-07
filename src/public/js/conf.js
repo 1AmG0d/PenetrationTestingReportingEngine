@@ -9,6 +9,7 @@ const reportDir = document.getElementById('reportDir');
 const templateDir = document.getElementById('templateDir');
 const ptrTemplate = document.getElementById('ptrTemplate');
 const confSave = document.getElementById('confSave');
+const closeWindow = document.getElementById('closeWindow');
 
 document.addEventListener('DOMContentLoaded', function() {
   readConfig();
@@ -26,6 +27,10 @@ confSave.addEventListener('click', function(e){
   } else {
     M.toast({html: 'Configurations Failed To Save!'})
   }
+});
+
+closeWindow.addEventListener('click', function(e){
+  ipcRenderer.send('closeWindow');
 });
 
 function readConfig(){

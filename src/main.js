@@ -214,6 +214,10 @@ ipcMain.on('OpenConfWindow', function() {
   }
 });
 
+ipcMain.on('closeWindow', function(e) {
+  e.sender.getOwnerBrowserWindow().close()
+});
+
 ipcMain.on('ReadConfigFile', function(e) {
   e.returnValue = readConfigFile();
 });

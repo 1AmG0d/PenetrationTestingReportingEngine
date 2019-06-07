@@ -12,12 +12,10 @@
     <div class="nav-wrapper">
       <a class="brand-logo left">New Report</a>
       <ul class="right">
+        <li><a id="closeWindow" class="btn modal-close waves-effect waves-red btn-flat"><i class="material-icons left">exit_to_app</i>Close</a></li>
         <li><a data-target="docIOModal" class="btn modal-trigger waves-effect waves-red"><i class="material-icons left">save</i>Save/Load Template</a></li>
         <li><a data-target="docGenModal" class="btn modal-trigger waves-effect waves-red"><i class="material-icons left">insert_drive_file</i>Create Report</a></li>
       </ul>
-      <div class="progress">
-          <div class="indeterminate red"></div>
-      </div>
     </div>
   </nav>
 
@@ -221,13 +219,12 @@
     </main>
     <div id="docIOModal" class="modal">
       <div class="modal-content">
-        <h4>NOT DONE YET</h4>
-        <p>TO DO</p>
+        <h4>Template Management</h4>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="btn modal-close waves-effect waves-red btn-flat">Cancel</a>
-        <a href="#!" data-target="saveTemplateModal" class="btn modal-trigger modal-close waves-effect waves-red">Save Template</a>
-        <a href="#!" data-target="loadTemplateModal" class="btn modal-trigger modal-close waves-effect waves-red btn-flat">Load Template</a>
+        <a href="#!" class="btn modal-close waves-effect waves-red btn-flat"><i class="material-icons left">cancel</i>Cancel</a>
+        <a href="#!" data-target="saveTemplateModal" class="btn modal-trigger modal-close waves-effect waves-red"><i class="material-icons left">file_upload</i>Save Template</a>
+        <a href="#!" data-target="loadTemplateModal" class="btn modal-trigger modal-close waves-effect waves-red btn-flat"><i class="material-icons left">file_download</i>Load Template</a>
       </div>
     </div>
     <div id="docGenModal" class="modal">
@@ -235,47 +232,47 @@
         <h4>Penetration Testing Finding Generation</h4>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="btn modal-close waves-effect waves-red btn-flat">Cancel</a>
-        <a href="#!" id="generateFinding" class="btn modal-close waves-effect waves-red btn-flat">Generate Finding Report</a>
+        <a href="#!" class="btn modal-close waves-effect waves-red btn-flat"><i class="material-icons left">cancel</i>Cancel</a>
+        <a href="#!" id="generateFinding" class="btn modal-close waves-effect waves-red btn-flat"><i class="material-icons left">restore_page</i>Generate Finding Report</a>
       </div>
     </div>
 
     <div id="saveTemplateModal" class="modal">
       <div class="modal-content">
-        <h4>Save Report Template </h4>
+        <h4>Save Report Template</h4>
         <br>
         <div class="input-field col s6">
           <input placeholder="Report Template Name" id="tempName" type="text" class="validate">
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" id="saveTemplate" class="btn modal-close waves-effect waves-red btn-flat">Save</a>
+        <a href="#!" class="btn modal-close waves-effect waves-red btn-flat"><i class="material-icons left">cancel</i>Cancel</a>
+        <a href="#!" id="saveTemplate" class="btn modal-close waves-effect waves-red btn-flat"><i class="material-icons left">cancel</i>Save</a>
       </div>
     </div>
 
     <div id="loadTemplateModal" class="modal">
       <div class="modal-content">
-        <h4>Load Report Template </h4>
+        <h4>Load Report Template</h4>
         <br>
         <div class="file-field input-field col s12">
-          <div class="btn waves-effect waves-red">
-            <span>Select File</span>
-            <i class="material-icons left">attach_file</i>
-            <input type="file" id="templateFileInput">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path hide" type="text" placeholder="Upload File">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Select File</span>
+              <i class="material-icons left">attach_file</i>
+              <input type="file" id="templateFileInput">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Upload File">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" id="loadTemplate" class="btn modal-close waves-effect waves-red btn-flat">Load</a>
+        <div class="modal-footer">
+          <a href="#!" class="btn modal-close waves-effect waves-red btn-flat"><i class="material-icons left">cancel</i>Cancel</a>
+          <a href="#!" id="loadTemplate" class="btn modal-close waves-effect waves-red btn-flat">Load</a>
+        </div>
       </div>
     </div>
-
-
-
-
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script type="text/javascript" src="../js/report.js"></script>
   </body>

@@ -13,7 +13,6 @@ var configuration;
 
 var definitionData;
 
-
 var vulnerabilitiesData;
 var impactData;
 var likihoodData;
@@ -57,6 +56,8 @@ const fileInputEvent = document.getElementById('fileInput');
 const remStepEvent = document.getElementById('remStep');
 const saveTemplateEvent = document.getElementById('saveTemplate');
 const loadTemplateEvent = document.getElementById('loadTemplate');
+const closeWindow = document.getElementById('closeWindow');
+
 // const fileInputEvent = document.getElementById('fileInput');
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -81,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
   steps = document.getElementById('steps');
   tempName = document.getElementById('tempName');
   templateFileInput = document.getElementById('templateFileInput');
+
 
   for (var i = 0; i < vulnerabilitiesData.length; ++i) {
     vulnType.options[vulnType.options.length] = new Option(vulnerabilitiesData[i]['Vulnerability'], i)
@@ -298,6 +300,10 @@ generateFindingEvent.addEventListener('click', function(){
   doc.setOptions({linebreaks: true});
   doc.loadZip(zip);
 
+  while(totalSteps.length > 0) {
+      totalSteps.pop();
+  }
+
   for (var i = 0; i < steps.children.length; i++) {
     totalSteps.push(steps.children[i].firstChild.value);
   }
@@ -450,3 +456,7 @@ function getBase64(file) {
      uploadedFilesB64.push(reader.result);
    };
 };
+
+closeWindow.addEventListener('click', function(e){
+  ipcRenderer.send('closeWindow');
+});
