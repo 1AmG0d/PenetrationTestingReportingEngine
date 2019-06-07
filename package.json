@@ -1,7 +1,7 @@
 {
   "name": "penetrationtestingreportingengine",
   "productName": "Penetration Testing Reporting Engine",
-  "version": "0.8.7",
+  "version": "0.9.0",
   "description": "Allows Penetration Testers To Quickly And Consistently Generate Penetration Testing Reports",
   "main": "src/main.js",
   "directories": {
