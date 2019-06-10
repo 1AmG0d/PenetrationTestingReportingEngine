@@ -36,12 +36,12 @@ const defDefinitions = {
         "Moderate",
         "High"
       ],
-      "likihood" : [
+      "likelihood" : [
         "Low",
         "Moderate",
         "High"
       ],
-      "overall" : [
+      "overallRisk" : [
         "Informational",
         "Low",
         "Moderate",

@@ -15,8 +15,8 @@ var definitionData;
 
 var vulnerabilitiesData;
 var impactData;
-var likihoodData;
-var overallData;
+var likelihoodData;
+var overallRiskData;
 
 var applicationName;
 var applicationURL;
@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < impactData.length; ++i) {
     vulnImpact.options[vulnImpact.options.length] = new Option(impactData[i], i)
   };
-  for (var i = 0; i < likihoodData.length; ++i) {
-    vulnLikelihood.options[vulnLikelihood.options.length] = new Option(likihoodData[i], i)
+  for (var i = 0; i < likelihoodData.length; ++i) {
+    vulnLikelihood.options[vulnLikelihood.options.length] = new Option(likelihoodData[i], i)
   };
-  for (var i = 0; i < overallData.length; ++i) {
-    overallRisk.options[overallRisk.options.length] = new Option(overallData[i], i)
+  for (var i = 0; i < overallRiskData.length; ++i) {
+    overallRisk.options[overallRisk.options.length] = new Option(overallRiskData[i], i)
   };
 
   M.FormSelect.init(document.querySelectorAll('select'), {});
@@ -117,8 +117,8 @@ function readDefinitions(){
 
   vulnerabilitiesData = definitionData['Vulnerabilities'];
   impactData = definitionData['Levels'][0].impact;
-  likihoodData = definitionData['Levels'][0].likihood;
-  overallData = definitionData['Levels'][0].overall;
+  likelihoodData = definitionData['Levels'][0].likelihood;
+  overallRiskData = definitionData['Levels'][0].overallRisk;
 
 };
 
