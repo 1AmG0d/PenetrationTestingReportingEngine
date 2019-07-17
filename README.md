@@ -103,6 +103,8 @@ $ npm run package-<OS>
 | {ifInjParamDesc} | via the "k" parameter | Adds text to Injection Parameter. Used in summary/description section of report. Not the character casing.|
 | {ifPayload} | using the following Payload: <PAYLOAD> | Adds text to Payload Parameter. Used in summary/description section of report |
 | {ifUploads} | See embedded files for walkthrough: | Adds Text if Files are added. |
+| {vulnNotes} | Some Notes Here | Stores value from note field. |
+| {ifNotes} | Please Not:e\nSome Notes Here | adds the string "Please Note:\n{vulnNotes}. |
 
 ### To-Do
  - Possibly Implement Risk Calculator
