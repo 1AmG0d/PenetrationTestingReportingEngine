@@ -99,22 +99,17 @@ $ npm run package-<OS>
 | {payload} | <PAYLOAD> | Used anywhere in report where the Payload is needed. |
 | {#steps}{.}{/steps} | Went To https://www.amazon.com/s?k=test | Used anywhere in report where the Steps are needed |
 | | User Demonstrated XXX Vulnerability  | Note: This Is Needed Once. All Steps Are Replaced In This Location |
+| {vulnNotes} | Some Notes Here | Stores value from note field. |
+| {ifNotes} | Please Not:e\nSome Notes Here | adds the string "Please Note:\n{vulnNotes}. |
 | {ifInjParam} | Via The "c" Parameter | Adds text to Injectable Parameter. Used in Title and Report Name. Note the character casing. |
 | {ifInjParamDesc} | via the "k" parameter | Adds text to Injection Parameter. Used in summary/description section of report. Not the character casing.|
 | {ifPayload} | using the following Payload: <PAYLOAD> | Adds text to Payload Parameter. Used in summary/description section of report |
 | {ifUploads} | See embedded files for walkthrough: | Adds Text if Files are added. |
-| {vulnNotes} | Some Notes Here | Stores value from note field. |
-| {ifNotes} | Please Not:e\nSome Notes Here | adds the string "Please Note:\n{vulnNotes}. |
+
 
 ### To-Do
- - Possibly Implement Risk Calculator
-    - https://www.security-net.biz/files/owaspriskcalc.html
- - Create Function To Generate Report If No Template Found
- - Save Report As PDF
  - Fix Embedding Images/Videos Into Generated Reports
  - Add More Parameters For Templates. Make It More Dynamic
- - Add Upload Parameter For Template (CURRENTLY NOT WORKING NEED TO FIX)
- - Create Example Template docx
 
 License
 ----
