@@ -24,7 +24,7 @@
   "dependencies": {
     "docxtemplater": "^3.11.2",
     "electron": "^5.0.3",
-    "jszip": "^2.6.1",
+    "jszip": "^2.7.0",
     "materialize-css": "^1.0.0"
   },
   "devDependencies": {
