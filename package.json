@@ -22,7 +22,7 @@
   "author": "IΛMGӨÐ",
   "license": "MIT",
   "dependencies": {
-    "docxtemplater": "^3.11.2",
+    "docxtemplater": "^3.31.4",
     "electron": "^5.0.3",
     "jszip": "^2.6.1",
     "materialize-css": "^1.0.0"
